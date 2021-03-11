@@ -59,3 +59,27 @@
         width:95%;
         height:360px
     }
+    section #Information
+    {
+        width: 100%;
+        margin-bottom:20px;
+    }
+
+    /* "ĐĂNG KÍ NHẬN TIN MỚI" */
+
+    #Information h2
+    {
+        text-transform: uppercase;
+        text-align: center;
+        color: black;
+        padding-top: 0;
+    }
+
+    #Information > p
+    {
+        letter-spacing: 00.02em;
+        text-align: center;
+        font-size: 120%;
+        color: rgba(0, 0, 0, 0.6);
+        margin-top: 0.5%;
+    }
