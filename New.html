@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="css/Divide-Column.css" rel="stylesheet" type="text/css">
     <link href="css/CTSP.css" rel="stylesheet" type="text/css">
@@ -17,7 +18,7 @@
 </head>
 <body >
     <!-- HEADER -->
-   <header>
+   <!-- <header>
 
         <nav>
             <a id="Logo" href="Index.html"><img src="Image/Header/Logo.svg" alt="Logo"></a>
@@ -141,34 +142,34 @@
                 <a id="ShoppingButton" href="DongHoNam.html">Khám phá ngay</a>
             </div>
         </div>
-    </header> 
-    <div class="container">
+    </header>  -->
+    <div class="container-fluid" style="padding-left: 100px; padding-right:100px;" >
         <div class="row">
-            <div class="col-lg-8">
-                <div style="background-image: url(images/MenAndWomenWatch/MenWatch.PNG);background-repeat: no-repeat; width:100%;height:300px;color:white;padding:10px">
-                    <div style="margin-top:200px">
-                        <h3>What is Lorem Ipsum?</h3>
-                        <span>Bình Luận</span> <span>33 phút trước</span>
-                    </div>                  
-                </div>
+            <div class="col-lg-8" style="position: relative;">
+                <div style="margin-top:220px; position:absolute;color:white;padding-left: 10px;">
+                    <h3>What is Lorem Ipsum?</h3>
+                    <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
+                </div>   
+                <img src="images/News/DH-ThuySy.jpg" style="width:100%;height:300px">
+                               
             </div>
-            <div class="col-lg-4">
-                <div style="background-image: url(images/MenAndWomenWatch/MenWatch.PNG);background-repeat: no-repeat; width:100%;height:300px;color:white;padding:10px;">
-                    <div style="margin-top:200px">
-                        <h3>What is Lorem Ipsum?</h3>
-                        <span>Bình Luận</span> <span>33 phút trước</span>
-                    </div>
-                </div> 
+            <div class="col-lg-4" style="position: relative;">
+                <div style="margin-top:220px; position:absolute;color:white;padding-left: 10px;">
+                    <h3>What is Lorem Ipsum?</h3>
+                    <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
+                </div>   
+                <img src="images/News/DH-NhatBan.jpg" style="width:100%;height:300px">
+                               
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-lg-8">
                 <div class="row mb-3">
-                    <h2>Tin tức mới nhất</h2>
+                    <h1 style="font-weight:700"><i class="fas fa-newspaper "></i> Tin tức mới nhất</h1>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-2">
-                        <img src="images/p-4.png" />
+                    <div class="col-lg-5">
+                        <img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/>
                     </div>
                     <div class="col-lg-7">
                         <h3>What is Lorem Ipsum?</h3>
@@ -180,8 +181,8 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-2">
-                        <img src="images/p-4.png" />
+                    <div class="col-lg-5">
+                        <img src="images/News/DH_LenCotTay.jpg" style="width: 90%;height:80%"/>
                     </div>
                     <div class="col-lg-7">
                         <h3>What is Lorem Ipsum?</h3>
@@ -193,8 +194,8 @@
                     </div>
                 </div>
                 <div class="row mt-3">
-                    <div class="col-lg-2">
-                        <img src="images/p-4.png" />
+                    <div class="col-lg-5">
+                        <img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/>
                     </div>
                     <div class="col-lg-7">
                         <h3>What is Lorem Ipsum?</h3>
@@ -205,63 +206,71 @@
                         </p>
                     </div>
                 </div>
-            
                 <div class="container" >
-                    <ul class="pagination  justify-content-center " >
-                        <li class="page-item m-2"><a class="page-link" href="#"><<</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item m-2 active"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="#">5</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="#">6</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="#">>></a></li>
+                    <ul class="pagination  justify-content-center pagination-cirle" >
+                        <li class="page-item m-2"><div style="border-radius: 2px;"><a class="page-link"href="javascript:void(0)" > << </a></div></li>
+                        <li class="page-item m-2 active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">2</a></li>
+                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">3</a></li>
+                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">4</a></li>
+                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">5</a></li>
+                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">6</a></li>
+                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">>></a></li>
                         </ul>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="row"><h2>Trending</h2></div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="images/p-4.png" style="width:100%;height:auto"/>
+                <div class="row"><h1 style="font-weight:700">Trending</h1></div>
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
                     </div>
-                    <div class="col-9">
-                        <h3>What is Lorem Ipsum?</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="images/p-4.png" style="width:100%;height:auto"/>
-                    </div>
-                    <div class="col-9">
-                        <h3>What is Lorem Ipsum?</h3>
+                    <div class="col-8">
+                        <h5>What is Lorem Ipsum?</h5>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="images/p-4.png" style="width:100%;height:auto"/>
+                <hr>
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
                     </div>
-                    <div class="col-9">
-                        <h3>What is Lorem Ipsum?</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="images/p-4.png" style="width:100%;height:auto"/>
-                    </div>
-                    <div class="col-9">
-                        <h3>What is Lorem Ipsum?</h3>
+                    <div class="col-8">
+                        <h5>What is Lorem Ipsum?</h5>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-3">
-                        <img src="images/p-4.png" style="width:100%;height:auto"/>
+                <hr>
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
                     </div>
-                    <div class="col-9">
-                        <h3>What is Lorem Ipsum?</h3>
+                    <div class="col-8">
+                        <h5>What is Lorem Ipsum?</h5>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
-
+                <hr>
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                    </div>
+                    <div class="col-8">
+                        <h5>What is Lorem Ipsum?</h5>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-2">
+                    <div class="col-4">
+                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                    </div>
+                    <div class="col-8">
+                        <h5>What is Lorem Ipsum?</h5>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
+                    </div>
+                </div>
+                <hr>
             </div>
         </div>
     </div>
@@ -351,5 +360,6 @@
 <script src="JS/JSElement.js"></script>
 <script src="JS/elevatezoom-master/jquery.elevatezoom.js"></script>
 <script src="JS/Run-snow.js"></script>
+<script src="JS/News.js"></script>
 </body>
 </html>
