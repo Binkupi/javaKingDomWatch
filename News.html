@@ -8,24 +8,23 @@
     <link href="css/Divide-Column.css" rel="stylesheet" type="text/css">
     <link href="css/CTSP.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/News.css">
     <link rel="stylesheet" href="css/CSSElement.css">
     <link rel="stylesheet" href="css/KingdomWatch.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a3633fc35f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <title>Tin tức</title>    
 
 </head>
 <body >
-    <!-- HEADER -->
-   <!-- <header>
-
+       <!-- HEADER -->
+    <header>
         <nav>
-            <a id="Logo" href="Index.html"><img src="Image/Header/Logo.svg" alt="Logo"></a>
-            <a id="underline_none" class="NavElement" href="Index.html">
+            <a id="Logo" href="Index.html"><img src="Image/Header/Logo.svg" alt="LogoWatchKingdom"></a>
+            <a id="MainNavElement" class="NavElement" href="Index.html">
                 <p>Trang chủ</p>
             </a>
-            <p class="NavElement"><span><a id="MainNavElement">Đồng hồ</a></span></p>
+            <p class="NavElement"><span>Đồng hồ</span></p>
             <a class="NavElement" href="Contact.html" id="underline_none">
                 <p>Liên hệ</p>
             </a>
@@ -121,7 +120,7 @@
             <a href="DongHoNam.html"><img src="Image/Header/AppleLogo.svg" alt="Apple"></a>
             <a href="DongHoNam.html"><img src="Image/Header/SeikoLogo.svg" alt="Seiko"></a>
             <a href="DongHoNam.html"><img src="Image/Header/CitizenLogo.svg" alt="Citizen"></a>
-            <a href="DongHoNam.html"><img src="Image/Header/DWLogo.svg" alt="DW"></a>
+            <a href="DongHoNam.html"><img src="Image/Header/DWLogo.svg" alt="Daniel Wellington"></a>
             <a href="DongHoNam.html"><img src="Image/Header/CurnonLogo.svg" alt="Curnon"></a>
             <a href="DongHoNam.html"><img src="Image/Header/GShockLogo.svg" alt="GShock"></a>
             <a href="DongHoNam.html"><img src="Image/Header/FossilLogo.svg" alt="Fossil"></a>
@@ -135,44 +134,48 @@
             <a href="DongHoNam.html"><img src="Image/Header/MichaelKorsLogo.svg" alt="MichaelKors"></a>
         </div>
 
-        <div id="Banner_CTSP">
+        <div id="Banner">
             <div id="BannerContent">
                 <h1>Đồng hồ chất, chuẩn lịch lãm</h1>
                 <h2>Bắt đầu trải nghiệm đẳng cấp mua sắm</h2>
                 <a id="ShoppingButton" href="DongHoNam.html">Khám phá ngay</a>
             </div>
         </div>
-    </header>  -->
-    <div class="container-fluid" style="padding-left: 100px; padding-right:100px;" >
+    </header>
+
+    <div class="container-fluid mt-5" style="padding-left: 100px; padding-right:100px;" >
         <div class="row">
             <div class="col-lg-8" style="position: relative;">
-                <div style="margin-top:220px; position:absolute;color:white;padding-left: 10px;">
-                    <h3>What is Lorem Ipsum?</h3>
-                    <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
-                </div>   
-                <img src="images/News/DH-ThuySy.jpg" style="width:100%;height:300px">
-                               
+                <a href="#">
+                    <div style="margin-top:280px; position:absolute;color:white;padding-left: 10px;">
+                        <h3>What is Lorem Ipsum?</h3>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
+                    </div>   
+                    <img src="images/News/DH-ThuySy.jpg" style="width:95%;height:360px">
+                </a>                   
             </div>
             <div class="col-lg-4" style="position: relative;">
-                <div style="margin-top:220px; position:absolute;color:white;padding-left: 10px;">
-                    <h3>What is Lorem Ipsum?</h3>
-                    <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
-                </div>   
-                <img src="images/News/DH-NhatBan.jpg" style="width:100%;height:300px">
+                <a href="#">
+                    <div style="margin-top:280px; position:absolute;color:white;padding-left: 10px;">
+                        <h3>What is Lorem Ipsum?</h3>
+                        <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
+                    </div>   
+                    <img src="images/News/DH-NhatBan.jpg" style="width:95%;height:360px">
+                </a>    
                                
             </div>
         </div>
         <div class="row mt-5">
             <div class="col-lg-8">
                 <div class="row mb-3">
-                    <h1 style="font-weight:700"><i class="fas fa-newspaper "></i> Tin tức mới nhất</h1>
+                    <h1 style="font-weight:700;color:#000A5A"><i class="fas fa-newspaper "></i> Tin tức mới nhất</h1>
                 </div>
                 <div class="row mt-3">
                     <div class="col-lg-5">
-                        <img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/>
+                        <a href="#"><img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/></a>
                     </div>
                     <div class="col-lg-7">
-                        <h3>What is Lorem Ipsum?</h3>
+                        <a href="#" class="PageNews"><h3>What is Lorem Ipsum?</h3></a>
                         <h6>Đăng tải ngày 3/3/2021</h6>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -182,10 +185,10 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-lg-5">
-                        <img src="images/News/DH_LenCotTay.jpg" style="width: 90%;height:80%"/>
+                        <a href="#"><img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/></a>
                     </div>
                     <div class="col-lg-7">
-                        <h3>What is Lorem Ipsum?</h3>
+                        <a href="#" class="PageNews"><h3>What is Lorem Ipsum?</h3></a>
                         <h6>Đăng tải ngày 3/3/2021</h6>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -195,10 +198,10 @@
                 </div>
                 <div class="row mt-3">
                     <div class="col-lg-5">
-                        <img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/>
+                        <a href="#"><img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/></a>
                     </div>
                     <div class="col-lg-7">
-                        <h3>What is Lorem Ipsum?</h3>
+                        <a href="#" class="PageNews"><h3>What is Lorem Ipsum?</h3></a>
                         <h6>Đăng tải ngày 3/3/2021</h6>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -206,77 +209,85 @@
                         </p>
                     </div>
                 </div>
-                <div class="container" >
-                    <ul class="pagination  justify-content-center pagination-cirle" >
-                        <li class="page-item m-2"><div style="border-radius: 2px;"><a class="page-link"href="javascript:void(0)" > << </a></div></li>
-                        <li class="page-item m-2 active"><a class="page-link" href="javascript:void(0)">1</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">2</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">3</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">4</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">5</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">6</a></li>
-                        <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">>></a></li>
-                        </ul>
+                <div class="row mt-3">
+                    <div class="col-lg-5">
+                        <a href="#"><img src="images/News/DH-Qua.jpg" style="width: 90%;height:80%"/></a>
+                    </div>
+                    <div class="col-lg-7">
+                        <a href="#" class="PageNews"><h3>What is Lorem Ipsum?</h3></a>
+                        <h6>Đăng tải ngày 3/3/2021</h6>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="row"><h1 style="font-weight:700">Trending</h1></div>
+                <div class="row"><h1 style="font-weight:700;color:#000A5A">Trending</h1></div>
                 <div class="row mb-2">
                     <div class="col-4">
-                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                        <a href="#"><img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/></a>
                     </div>
                     <div class="col-8">
-                        <h5>What is Lorem Ipsum?</h5>
+                        <a href="#" class="PageNews"><h5>What is Lorem Ipsum?</h5></a>
                         <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
                 <hr>
                 <div class="row mb-2">
                     <div class="col-4">
-                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                        <a href="#"><img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/></a>
                     </div>
                     <div class="col-8">
-                        <h5>What is Lorem Ipsum?</h5>
+                        <a href="#" class="PageNews"><h5>What is Lorem Ipsum?</h5></a>
                         <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
                 <hr>
                 <div class="row mb-2">
                     <div class="col-4">
-                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                        <a href="#"><img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/></a>
                     </div>
                     <div class="col-8">
-                        <h5>What is Lorem Ipsum?</h5>
+                        <a href="#" class="PageNews"><h5>What is Lorem Ipsum?</h5></a>
                         <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
                 <hr>
                 <div class="row mb-2">
                     <div class="col-4">
-                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                        <a href="#"><img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/></a>
                     </div>
                     <div class="col-8">
-                        <h5>What is Lorem Ipsum?</h5>
+                        <a href="#" class="PageNews"><h5>What is Lorem Ipsum?</h5></a>
                         <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
                 <hr>
                 <div class="row mb-2">
                     <div class="col-4">
-                        <img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/>
+                        <a href="#"><img src="images/News/DH-Gold.jpg" style="width:100%;height:50px"/></a>
                     </div>
                     <div class="col-8">
-                        <h5>What is Lorem Ipsum?</h5>
+                        <a href="#" class="PageNews"><h5>What is Lorem Ipsum?</h5></a>
                         <span><i class="fas fa-comment-alt"></i> Bình Luận</span> <span style="color:gray">33 phút trước</span>
                     </div>
                 </div>
                 <hr>
             </div>
         </div>
+            <ul class="pagination  justify-content-center pagination-cirle" >
+                <li class="page-item m-2"><a class="page-link"href="javascript:void(0)" >«</a></li>
+                <li class="page-item m-2 active"><a class="page-link" href="javascript:void(0)">1</a></li>
+                <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">2</a></li>
+                <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">3</a></li>
+                <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">4</a></li>
+                <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">5</a></li>
+                <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">6</a></li>
+                <li class="page-item m-2"><a class="page-link" href="javascript:void(0)">»</a></li>
+            </ul>
     </div>
-   
-
-
     <!-- ĐĂNG KÍ NHẬN TIN MỚI -->
     <section id="NewInformation">
         <h2>Đăng kí nhận tin mới</h2>

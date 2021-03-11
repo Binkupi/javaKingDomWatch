@@ -1,0 +1,25 @@
+.pagination>li>a, .pagination>li>span {
+     border-radius: 50% !important;
+     width:32px;
+     height:32px;
+     font-size: 14px;
+     cursor: pointer;
+     color: #333;
+     margin: 0 1px;
+     border: 1px solid #bdbdbd;
+     font-weight: 400;
+    }
+    .PageNews{
+        color:black;
+        text-decoration: none;
+    }
+    .PageNews:hover{
+        color:#207BC1;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .PageNews:visited{
+        color:black;
+        cursor: pointer;
+        text-decoration: none;
+    }
