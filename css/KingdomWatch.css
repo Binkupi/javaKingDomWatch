@@ -1,8 +1,5 @@
 /* "KINGDOM WATCH" */
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-=======
->>>>>>> a8471ab02ad260d7daf07868a314adef03e5cccf
 
 *
 {
@@ -11,11 +8,7 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 body
-=======
-html
->>>>>>> a8471ab02ad260d7daf07868a314adef03e5cccf
 {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -1105,17 +1098,11 @@ textarea.ContactFormInput
     color: #ec7a1c;
 }
 
-<<<<<<< HEAD
 #Footer h3
 {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-=======
-#Footer h4
-{
-    text-transform: uppercase;
->>>>>>> a8471ab02ad260d7daf07868a314adef03e5cccf
 }
 
 #Footer img.Icon
@@ -1413,7 +1400,6 @@ div#PaymentRightColumn
 #Payment button
 {
     cursor: pointer;
-<<<<<<< HEAD
 }
 
                                         /* -----THÔNG TIN LIÊN HỆ----- */
@@ -1487,6 +1473,4 @@ div.WatchKingdomPropsCard  img{
 
 div.WatchKingdomPropsCard > p:first-of-type{
     font-weight: bold;
-=======
->>>>>>> a8471ab02ad260d7daf07868a314adef03e5cccf
 }
