@@ -99,6 +99,22 @@ p.NavElement
     text-transform: uppercase;
 }
 
+a.ContactNavTag:first-of-type{
+    position: absolute;
+    top: 100%;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #fbfbfb;
+}
+
+a.ContactNavTag:nth-of-type(2){
+    position: absolute;
+    top: 150%;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #fbfbfb;
+}
+
 #Cart sup
 {
     position: absolute;
@@ -1412,14 +1428,22 @@ section.StoreAddress > h4{
 }
 
 
-section.StoreAddressCard{
+.StoreAddress .StoreAddressCard{
     margin-top: 1.5rem;
     padding-left: 0;
     height: 315px;
     display: flex;
     align-items: center;
-    border-top: 1px solid black ;
-    border-bottom: 1px solid black;
+    border-top: 1px solid lightgray ;
+    border-bottom: 1px solid lightgray;
+}
+
+.StoreAddressNotFirst .StoreAddressCard{
+    padding-left: 0;
+    height: 315px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
 }
 
 section.StoreAddressCard > img{
