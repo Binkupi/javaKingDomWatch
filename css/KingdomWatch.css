@@ -1479,20 +1479,7 @@ div.WatchKingdomPropsTitle{
 
 div.WatchKingdomPropsTitle > h4{
     text-align: center;
-    clear: both;
-    position: relative;
-    overflow: hidden;
-}
-
-div.WatchKingdomPropsTitle > h4::before{
-    content: "";
-    display: block;
-    border-top: 1px solid #ebebeb;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 50%;
-    z-index: 1;
+    font-weight: bolder;
 }
 
 div.WatchKingdomPropsTitle > h4 + p{
