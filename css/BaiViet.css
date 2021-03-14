@@ -174,3 +174,45 @@
     font-size: 14px;
 }
 
+/* BEGIN: Top dong ho nam nu ban chay gia chua den 5 trieu */
+.list__watch-info {
+
+}
+
+.name__watch-center-link {
+    text-decoration: none;
+}
+
+.watch__item-infor {
+    list-style-type: none;
+}
+
+.name__watch-center {
+    text-align: center;
+    font-size: 20px;
+}
+
+.watch__item-content {
+    display: flex;
+}
+
+.content-text-link {
+
+}
+
+.watch__item-content-item {
+    width: 33.33333%;
+}
+
+.watch__item-content-item-img {
+    width: 100%;
+}
+
+
+.watch__item-content-item {
+   padding: 5px 5px;
+}
+
+
+
+/* END: Top dong ho nam nu ban chay gia chua den 5 trieu */
