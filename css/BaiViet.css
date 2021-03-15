@@ -5,7 +5,6 @@
     margin: 0 auto;
 }
 
-
 .grid__new_grow {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +73,6 @@
     font-size: 26px;
     line-height: 38px;
     font-weight: 500;
-    /*text-transform: uppercase;*/
     color: #277bc1;
 }
 
@@ -150,7 +148,6 @@
     color: #207bc1;
 }
 
-
 .article__sidebar-img {
     width: 76px;
     height: 60px;
@@ -160,7 +157,6 @@
     line-height: 0;
     display: block;
     overflow: hidden;
-    /*border: 1px solid #bdbdbd;*/
 }
 
 .article__sidebar-img-child {
@@ -174,3 +170,108 @@
     font-size: 14px;
 }
 
+/* BEGIN: Top dong ho nam nu ban chay gia chua den 5 trieu */
+
+.big_title {
+    font-size: 30px;
+}
+
+.list__watch-info {
+    padding: 0;
+    list-style-type: none;
+}
+
+.name__watch-center-link {
+    text-decoration: none;
+    display: inline-block;
+    
+}
+
+.watch__item-infor {
+    list-style-type: none;
+    padding: 30px 20px;
+
+}
+
+.name__watch-center {
+    text-align: center;
+    font-size: 16px;
+    display: inline-block;
+    width:40%;
+}
+
+.name-watch {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.watch__item-infor-cossbar {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid rgb(235, 235, 235);
+    width: 30%;
+}
+
+.watch__item-content {
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.content-text-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content-text-link:hover  {
+    text-decoration: underline;
+}
+.content-text-watch-info {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.watch__item-content-item {
+    width: 33.333%;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+.watch__item-content-item:hover .watch__item-content-item-img  {
+    transform: scale(1.05);
+}
+
+.watch__item-content-item-img {
+    width: 100%;
+}
+
+.buy__now {
+    display: inline-block;
+    width: 100%;
+}
+
+.buy__now-link {
+  
+  width: 190px;
+  display: block;
+  margin: 0 auto;
+}
+
+.buy__now-link:hover .buy__now-img {
+    transform: scale(1.05);
+}
+
+.advertise__list {
+
+}
+
+.advertise__list-item {
+    margin-left: 10px;
+    
+}
+
+/* END: Top dong ho nam nu ban chay gia chua den 5 trieu */
