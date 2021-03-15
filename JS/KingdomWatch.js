@@ -530,6 +530,23 @@ function AddProductToCart()
     });
 }
 
+                                        /* -----NEWS----- */
+function ShowBackToTopBtn(){
+    let btn = $("#BackToTopBtn");
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > 1000)
+            btn.addClass("show");
+        else
+            btn.removeClass("show");
+    });
+};
+
+function ActiveBackToTopBtn(){
+    $("#BackToTopBtn").click(function(){
+        $("html, body").animate({scrollTop: 0}, '100');
+    });
+};
+
 var NumberOfProductInCart = 0;
 var NumberOfDifferentProductInCart = 0;
 var ID = 0;
@@ -570,6 +587,9 @@ $("document").ready(function () {
     ApplySaleCode();
     /* Chi tiết sản phẩm */
     AddProductToCart();
+    /* Tin tức */
+    ShowBackToTopBtn();
+    ActiveBackToTopBtn();
 });
 
 
