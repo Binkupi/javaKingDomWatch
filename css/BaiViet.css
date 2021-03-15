@@ -5,7 +5,6 @@
     margin: 0 auto;
 }
 
-
 .grid__new_grow {
     display: flex;
     flex-wrap: wrap;
@@ -74,7 +73,6 @@
     font-size: 26px;
     line-height: 38px;
     font-weight: 500;
-    /*text-transform: uppercase;*/
     color: #277bc1;
 }
 
@@ -150,7 +148,6 @@
     color: #207bc1;
 }
 
-
 .article__sidebar-img {
     width: 76px;
     height: 60px;
@@ -160,7 +157,6 @@
     line-height: 0;
     display: block;
     overflow: hidden;
-    /*border: 1px solid #bdbdbd;*/
 }
 
 .article__sidebar-img-child {
@@ -176,6 +172,9 @@
 
 /* BEGIN: Top dong ho nam nu ban chay gia chua den 5 trieu */
 
+.big_title {
+    font-size: 30px;
+}
 
 .list__watch-info {
     padding: 0;
@@ -190,7 +189,7 @@
 
 .watch__item-infor {
     list-style-type: none;
-    padding: 20px;
+    padding: 30px 20px;
 
 }
 
@@ -199,7 +198,6 @@
     font-size: 16px;
     display: inline-block;
     width:40%;
-
 }
 
 .name-watch {
@@ -217,7 +215,6 @@
     border-top: 1px solid rgb(235, 235, 235);
     width: 30%;
 }
-
 
 .watch__item-content {
     display: flex;
@@ -268,9 +265,13 @@
     transform: scale(1.05);
 }
 
-.buy__now-img {
-    
+.advertise__list {
+
 }
 
+.advertise__list-item {
+    margin-left: 10px;
+    
+}
 
 /* END: Top dong ho nam nu ban chay gia chua den 5 trieu */
