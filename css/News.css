@@ -55,10 +55,17 @@
         width: 90%;
         height:80%
     }
+
+    .Img-News:hover {
+        transform: scale(1.15);
+        transition-delay: 0.15s;
+    }
+    
     .Img-Trending-New{
         width:95%;
         height:360px
     }
+
     section #Information
     {
         width: 100%;
@@ -82,4 +89,9 @@
         font-size: 120%;
         color: rgba(0, 0, 0, 0.6);
         margin-top: 0.5%;
+    }
+
+
+    .big-new {
+        m
     }
