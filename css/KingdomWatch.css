@@ -510,6 +510,7 @@ div#NoProductInCart
     background-color: white;
     z-index: 102;
     display: none;
+    
 }
 
 #SearchContent > div:first-child
@@ -1538,4 +1539,16 @@ div.WatchKingdomPropsCard > p:first-of-type{
 #BackToTopBtn.show{
     opacity: 1;
     visibility: visible;
+}
+
+.mainMenu a{
+    text-decoration: none;
+}
+                    
+.article__container{
+    line-height: 40px;
+}
+
+.content-text{
+    line-height: 35px;
 }
