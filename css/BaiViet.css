@@ -92,7 +92,11 @@
     line-height: 1.5;
     margin-top: 2px;
 }
-
+.content-text a{
+    text-decoration: none;
+    color:black;
+    font-weight: 900;
+}
 .content-text strong {
     padding: 5px 0;
     display: inline-block;
