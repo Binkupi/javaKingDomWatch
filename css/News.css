@@ -91,7 +91,23 @@
         margin-top: 0.5%;
     }
 
-
-    .big-new {
-        m
+    .news__black_link {
+        margin-top: 56px;
     }
+
+   .news__black_link-title {
+       text-transform: uppercase;
+   }
+
+   .news__black_link-text {
+       margin-left: 40px;
+       font-size: 15px;
+   }
+   .news__black_link-text a {
+       color: black;
+   }
+
+   .news__black_link-text a:hover {
+        color: blue;
+        text-decoration: none;
+   }
