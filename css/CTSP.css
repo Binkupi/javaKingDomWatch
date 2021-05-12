@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
-*{
-    padding: 0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-html{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    text-rendering: optimizeLegibility;
-}
->>>>>>> a8471ab02ad260d7daf07868a314adef03e5cccf
 .img-responsive
 {
     height:80%;
@@ -237,6 +223,16 @@ ul
     border: 0px;
     
 }
+.gach-ngang-ctsp
+{
+    width:80%;
+    margin-top:5px;
+    margin-bottom:5px;
+    background-color:rgb(226, 224, 224);
+    height: 1px;
+    border: 0px;
+    
+}
 .Description-Product
 {
     width:90%;
@@ -350,7 +346,7 @@ ul
 .sky-form 
 {
     width:90%;
-    height:160px;
+    height:220px;
     border:1px solid rgb(235, 229, 229);
     display: inline-block;
     margin-bottom:20px;
@@ -383,7 +379,7 @@ ul
 .sky-form .row1
 {
     width:100%;
-    height:80%;
+    height:100%;
     overflow:auto;
     margin-bottom:10px;
     padding-top:10px;

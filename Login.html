@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bản css đã nén của bootstrap 4, nên đặt trong cặp thẻ head -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/KingdomWatch.css">
     <link rel="stylesheet" href="css/footer.css"> 
     <link rel="stylesheet" href="css/account.css">
@@ -155,23 +157,31 @@
                 <div class="account_heading">
                     <h2>TÀI KHOẢN</h2>
                 </div>
-                <div class="account_main flex_container">
-                    <div class=" account_left account_shadow">
-                        <h3 >Watch Kingdom</h3>
-                        <div class="account_left" id="form_login">
-                            <input placeholder="Tên đăng nhập" type="email" id="email" tabindex="3" required>
-                            <input placeholder="Mật khẩu" type="password" id="password" tabindex="4" required>
-                            <div class="margin_up">
-                                <div class="account_father_button"><button class="account_button" id="btn_submit">Đăng nhập</button></div>
-                                <div class="account_father_forgot"><a href="#">Quên mật khẩu?</a></div>  
-                            </div>
+                <div class="row account_main">
+                    <div class="col-md-6 account_shadow acount " id="form_login">
+                        <div class="login">
+                            <h3 align="center">Watch Kingdom</h3>
+                            <form>
+                                <div class="form-group"  >
+                                <input type="email" placeholder="Tên đăng nhập" id="email" id="exampleInputEmail1" aria-describedby="emailHelp" tabindex="3" required>
+                                </div>
+                                <div class="form-group">
+                                <input type="password" placeholder="Mật khẩu" id="password"  id="exampleInputPassword1" tabindex="4" required>
+                                </div>
+                                <div class="margin_up">
+                                    <div class="account_father_button"><button class="account_button" id="btn_submit">Đăng nhập</button></div>
+                                    <div class="account_father_forgot"><a href="#">Quên mật khẩu?</a></div> 
+                                </div>
+                            
+                            </form>
                         </div>
+                        
                     </div>
-                    <div class=" account_right account_left" id="account_right_link" style="margin-top: 65px">
-                        <div class="col_2">
+                    <div class="col-md-6 account_new pl-5">
+                        <div  >
                             <h3>Người Mới? Tạo Tài Khoản</h3>
                             <p>Bằng cách tạo tài khoản với cửa hàng của chúng tôi, bạn sẽ có thể thực hiện quy trình thanh toán nhanh hơn, lưu trữ nhiều địa chỉ giao hàng, xem và theo dõi đơn đặt hàng trong tài khoản của bạn và hơn thế nữa.</p>
-                            <div class="div_btn_new_acc"><button type="submit" class="account_button_new" id="login" onclick="location.href='Register.html'">Tạo tài khoản mới</button></div>
+                            <div class="div_btn_new_acc"><button type="submit" class="account_button_new"  onclick="location.href='Register.html'">Tạo tài khoản mới</button></div>
                         </div>
                     </div>
                 </div>

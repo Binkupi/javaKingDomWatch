@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Bản css đã nén của bootstrap 4, nên đặt trong cặp thẻ head -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
     <title>Đồng hồ nữ</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/footer.css">       
@@ -150,21 +152,21 @@
     <div id="Container" style="position:relative">
         <div id="Content" >
             <!-- Khu vực chứa slogan của trang web -->
-            <section id="slogan" >
-                <div align="center">
-                    <div class="f-grid" >
-                        <div class="f-grid-col">
+            <section id="slogan" align="center" >
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-12 text-responsive">
                             <p><span><i class="fas fa-user-shield fa-2x"></i></span>
                                 <span> Bảo hành 10 năm lỗi nhà sản xuất</span>
                             </p>
                         </div>
-                        <div class="f-grid-col">
+                        <div class="col-sm-12 col-md-4 col-12  text-responsive">
                             <p>
                                 <span><i class="fas fa-shipping-fast fa-2x"></i></span>
                                 <span> Freeship đối với đơn hàng trên 1 triệu đồng</span>
                             </p>
                         </div>
-                        <div class="f-grid-col">
+                        <div class="col-sm-12 col-md-4 col-12  text-responsive">
                             <p>
                                 <span><i class="fas fa-award fa-2x"></i></span>
                                 <span> Cam kết 100% hàng chính hãng</span>
@@ -175,21 +177,24 @@
             </section>
             <!-- end khu vực chưa slogan-->
             <!-- Khu vực tạo các điều kiện bộ chọn để hiển thị sản phẩm trên trang web -->
-            <section id="Filter" >
-                <div id="Filter-row">
-                    <div id="Filter-col1">
-                        <label><b>Sắp xếp: </b></label>
+            <section id="Filter" class="container-fluid" >
+                <div  class="row p-0">
+                    <div class="col-sm-4 col-md-2 col-4 pr-0  text-responsive"  >
+                        <div id="label-sort"><label  ><b>Sắp xếp </b></label></div>
                     </div>
-                    <div id="Filter-col2">
-                            <ul class="list-unstyled">
+                    <div class="col-sm-6 col-md-2 col-6 ml-0 pl-0 pr-0 text-responsive" >
+                        <div id="sort">
+                            <ul class="list-unstyled ml-0">
                                 <li class="init">Phù hợp nhất</li>
                                 <li value="1" id="Init-Value">Phù hợp nhất</li>
                                 <li value="2">Giá tăng dần</li>
                                 <li value="3">Giá giảm dần</li>
                             </ul>
-                    </div>
-                    <div id="Filter-col3">
-                        <p id="Bo-Chon"><span> <i class="fas fa-sliders-h fa-1x"></i></span><span> FILTERS</span></p>
+                        </div>
+                            
+                    </div>                  
+                    <div  class="col-sm-2 col-md-4 col-2 p-0" align="right">
+                        <p id="Bo-Chon" ><span  class="text-responsive"> <i class="fas fa-sliders-h fa-1x"></i></span><span><b> FILTERS</b> </span></p>
                     </div>
                 </div> 
             </section>
@@ -295,7 +300,7 @@
                                 </tr>
                                 <tr>
                                     <td align="center" id="Day1"><div class="div-img-day"><img src="images/DH_Nam/day1.png" class="img-day"></div>
-                                        <div class="Description-Day">Dây da</div>
+                                        <div class="Description-Day">Dây da cao cấp</div>
                                     </td>
                                     <td align="center" id="Day2"><div class="div-img-day"><img src="images/DH_Nam/day2.png" class="img-day"></div>
                                         <div class="Description-Day">Dây kim loại</div>
@@ -313,8 +318,8 @@
                 <div id="Div-SanPham" >
                     <div id="Product_information" align="center">
                         <div id="div1">
-                            <div class="f-grid" >
-                                <div class="f-grid-col 1">
+                            <div class="row mt-4 ml-5 mr-5">
+                                <div class="col-sm-6 col-6 col-md-3 1">
                                     <div class="Sale-Product"  id="sanPham9" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/anne.17.png" alt="" />
@@ -336,7 +341,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 2">
+                                <div class="col-sm-6 col-6 col-md-3 2">
                                     <div class="Normal-Product"  id="sanPham3" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/autumn_10.png" alt="" />
@@ -355,7 +360,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 3">
+                                <div class="col-sm-6 col-6 col-md-3 3">
                                     <div class="Sale-Product"  id="sanPham5" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/cadie.20.png" alt="" />
@@ -377,7 +382,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 4">
+                                <div class="col-sm-6 col-6 col-md-3 4">
                                     <div class="Sale-Product"  id="sanPham8" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/charm11.png" alt="" />
@@ -400,8 +405,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="f-grid" >
-                                <div class="f-grid-col 5">
+                            <div class="row mt-4 ml-5 mr-5">
+                                <div class="col-sm-6 col-6 col-md-3 5">
                                     <div class="Normal-Product"  id="sanPham4" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/cora9.png" alt="" />
@@ -420,7 +425,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 6">
+                                <div class="col-sm-6 col-6 col-md-3 6">
                                     <div class="Normal-Product"  id="sanPham2" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/d1-2.png" alt="" />
@@ -439,7 +444,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 7">
+                                <div class="col-sm-6 col-6 col-md-3 7">
                                     <div class="Normal-Product"  id="sanPham6" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/d2-3.png" alt="" />
@@ -458,7 +463,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 8">
+                                <div class="col-sm-6 col-6 col-md-3 8">
                                     <div class="Normal-Product"  id="sanPham1" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/d3-1.png" alt="" />
@@ -478,8 +483,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="f-grid" >
-                                <div class="f-grid-col 9">
+                            <div class="row mt-4 ml-5 mr-5">
+                                <div class="col-sm-6 col-6 col-md-3 9">
                                     <div class="Sale-Product"  id="sanPham7" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/d4-4.png" alt="" />
@@ -501,7 +506,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 10">
+                                <div class="col-sm-6 col-6 col-md-3 10">
                                     <div class="Sale-Product"  id="sanPham11" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/d5-5.png" alt="" />
@@ -523,7 +528,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 11">
+                                <div class="col-sm-6 col-6 col-md-3 11">
                                     <div class="Normal-Product"  id="sanPham12" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/elegant24.png" alt="" />
@@ -542,7 +547,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 12">
+                                <div class="col-sm-6 col-6 col-md-3 12">
                                     <div class="Sale-Product"  id="sanPham10" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/fauna.8.png" alt="" />
@@ -567,8 +572,8 @@
                             </div>
                         </div>
                         <div id="div2">  
-                            <div class="f-grid" >
-                                <div class="f-grid-col 13">
+                            <div class="row mt-4 ml-5 mr-5">
+                                <div class="col-sm-6 col-6 col-md-3 13">
                                     <div class="Normal-Product"  id="sanPham17" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/gaia.12.png" alt="" />
@@ -587,7 +592,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 14">
+                                <div class="col-sm-6 col-6 col-md-3 14">
                                     <div class="Normal-Product"  id="sanPham14" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/grace19.png" alt="" />
@@ -606,7 +611,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 15">
+                                <div class="col-sm-6 col-6 col-md-3 15">
                                     <div class="Normal-Product"  id="sanPham15" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/haze6.png" alt="" />
@@ -625,7 +630,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 16">
+                                <div class="col-sm-6 col-6 col-md-3 16">
                                     <div class="Sale-Product"  id="sanPham13" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/kiss7.png" alt="" />
@@ -648,8 +653,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="f-grid" >
-                                <div class="f-grid-col 17">
+                            <div class="row mt-4 ml-5 mr-5">
+                                <div class="col-sm-6 col-6 col-md-3 17">
                                     <div class="Sale-Product"  id="sanPham16" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/lexie.16.png" alt="" />
@@ -671,7 +676,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 18">
+                                <div class="col-sm-6 col-6 col-md-3 18">
                                     <div class="Normal-Product"  id="sanPham18" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/mia21.png" alt="" />
@@ -690,7 +695,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 19">
+                                <div class="col-sm-6 col-6 col-md-3 19">
                                     <div class="Sale-Product"  id="sanPham23" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/mindful22.png" alt="" />
@@ -712,7 +717,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 20">
+                                <div class="col-sm-6 col-6 col-md-3 20">
                                     <div class="Normal-Product"  id="sanPham24" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/serene14.png" alt="" />
@@ -734,30 +739,32 @@
                             </div>
                         </div>
                         <div id="div3">
-                            <div class="f-grid" >
-                                <div class="f-grid-col 21">
-                                    <div class="Sale-Product"  id="sanPham20" align='center' >
-                                        <a href="#" class="mask">
-                                            <img class="img-responsive zoom-img" src="images/DH_Nu/sylvia.13.png" alt="" />
-                                        </a>
-                                        <div class="product-bottom">
-                                            <h3>Qiyana</h3>
-                                            <p>Explore Now</p>
-                                            <h4>
-                                                <span class="item_price">3.599.000 VND</span>
-                                            </h4>
-                                            <!--button Mua hàng-->
-                                            <button class="Button-Buy"><i class="fas fa-cart-plus"></i><span>Chọn mua</span></button>
-                                        </div>
-                                        <div class="Discount" >
-                                            <span>15%</span>
-                                        </div>
-                                        <div class="FvIcon">
-                                            <span><i class="far fa-heart fa-1x"></i></span>
+                            <div class="row mt-4 ml-5 mr-5">
+                                <div class="col-sm-6 col-6 col-md-3 21">
+                                    <div class="f-grid-col 21">
+                                        <div class="Sale-Product"  id="sanPham20" align='center' >
+                                            <a href="#" class="mask">
+                                                <img class="img-responsive zoom-img" src="images/DH_Nu/sylvia.13.png" alt="" />
+                                            </a>
+                                            <div class="product-bottom">
+                                                <h3>Qiyana</h3>
+                                                <p>Explore Now</p>
+                                                <h4>
+                                                    <span class="item_price">3.599.000 VND</span>
+                                                </h4>
+                                                <!--button Mua hàng-->
+                                                <button class="Button-Buy"><i class="fas fa-cart-plus"></i><span>Chọn mua</span></button>
+                                            </div>
+                                            <div class="Discount" >
+                                                <span>15%</span>
+                                            </div>
+                                            <div class="FvIcon">
+                                                <span><i class="far fa-heart fa-1x"></i></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 22">
+                                <div class="col-sm-6 col-6 col-md-3 22">
                                     <div class="Normal-Product"  id="sanPham19" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/tasteful23.png" alt="" />
@@ -776,7 +783,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 23">
+                                <div class="col-sm-6 col-6 col-md-3 23">
                                     <div class="Normal-Product"  id="sanPham21" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/tear15.png" alt="" />
@@ -795,7 +802,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="f-grid-col 24">
+                                <div class="col-sm-6 col-6 col-md-3 24">
                                     <div class="Normal-Product"  id="sanPham22" align='center' >
                                         <a href="#" class="mask">
                                             <img class="img-responsive zoom-img" src="images/DH_Nu/wind18.png" alt="" />
@@ -857,7 +864,7 @@
         
     </div>
     <!-- ĐĂNG KÍ NHẬN TIN MỚI -->
-    <section id="NewInformation">
+    <section id="NewInformation" class="text-responsive">
         <h2>Đăng kí nhận tin mới</h2>
         <p>Nhận các tin tức về chương trình và khuyến mãi sớm nhất</p>
         <div id="NewInfoInput">

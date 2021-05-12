@@ -1,23 +1,15 @@
-<<<<<<< HEAD
-=======
+/*Header start*/
+/* end */
 /* Thêm font chữ ngoài cho trang */
 *{
     padding: 0;
     margin:0;
     box-sizing: border-box;
 }
-
-html
-{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
-    text-rendering: optimizeLegibility;
-}
->>>>>>> a8471ab02ad260d7daf07868a314adef03e5cccf
-/*Header start*/
-/* end */
-
 /* trang trí cho slogan */
+p{
+    margin-bottom: 0;
+}
 #slogan
 {   
     
@@ -25,7 +17,18 @@ html
     height:60px;
     background-color:black;
     color:#FFFFFF;
+    line-height:60px;
 }
+@media screen and (max-width:768px) {
+    #slogan
+        {              
+            width:100%;
+            height:auto;
+            background-color:black;
+            color:#FFFFFF;
+        };
+    
+ }
 
 /* end */
 /* css cho Number-Product */
@@ -43,8 +46,6 @@ html
 /* css cho Filter */
 #Filter
 {   
-    
-    width:100%;
     height:70px;
     color:black;
     line-height:70px;
@@ -53,18 +54,65 @@ html
 /* Css cho bộ chọn trong filters */
 #Bo-Chon
 {
-    width: 15%;
+    width: 35%;
+    margin-left:auto;
+    margin-right:auto;
     height:70px;
     border-left:1px solid gray;
     text-align: center;
     border-right:1px solid gray;
     cursor: pointer;
 }
+@media screen and (max-width: 768px){
+    #Bo-Chon
+    {
+        width: 80%;
+        margin-left:auto;
+        margin-right:0;
+        height:70px;
+        border-left:1px solid gray;
+        text-align: center;
+        border-right:1px solid gray;
+        cursor: pointer;
+    }
+
+}
 .Bo-Chon-responsive
 {
     border-bottom:3px solid gray;
 }
+.text-responsive{
+    font-size:1.2vw;
+}
+.NewInfoInputElement{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
 /* Chia cột cho các bộ chọn trong filter*/
+@media screen and (max-width: 768px){
+    #FILTERS{
+        visibility: hidden;
+        font-size:2vw;
+    }
+    .text-responsive{
+        font-size:2vw;
+    }
+    h3{
+        font-size:3vw;
+        font-weight:700;
+    }
+    h4{
+        font-size:2.5vw;
+        font-weight:600;
+    }
+    h2{
+        font-size:3.5vw;
+        font-weight:800;
+    }
+
+}
+
 #Filter-row
 {
     width:100%;
@@ -120,54 +168,57 @@ html
 {
     opacity: 0.3;
 }
-
+#label-sort{
+    width:40%;
+    margin-left:auto;
+    margin-right:0;
+}
 /* tạo bộ chọn select từ thẻ ul và li*/
 .list-unstyled { 
     height: 30px;
-    width: 170px;
+    width: 100%;
     list-style-type: none;
     display:inline-block;
     background-color: white;
     }
-    .list-unstyled li
-    {
-        padding-left:15px;
-        width: 170px;
-        z-index:3;
-        position: relative;
-        border:1px;
-        cursor: pointer;  
-        margin-top:-1px;
-    }
-    .list-unstyled li:not(.init) 
-    {   
+.list-unstyled li
+{
+    width: 100%;
+    z-index:3;
+    position: relative;
+    border:1px;
+    cursor: pointer;  
+    margin-top:-1px;
+}
+.list-unstyled li:not(.init) 
+{   
 
-        width: 170px;
-        height:40px;
-        display: none;
-        background: #ddd;
-        line-height:40px;
-    }
-    .list-unstyled li:not(.init):hover
-    {
-        background-color:rgb(157, 157, 161);
-    } 
-    .list-unstyled li.selected:not(.init):after
-    {
-        font-family: 'FontAwesome';
-        content:"\f00c";
-        padding-left:20px;
-        font-size:20px;
-    }
-    .list-unstyled li.init:after
-    {
-        cursor: pointer;
-        border:0px;
-        font-family: 'FontAwesome';
-        content:"\f0d7";
-        font-size:25px;
-        padding-left:5px;
-    }
+    width: 100%;
+    height:40px;
+    display: none;
+    background: #ddd;
+    line-height:40px;
+}
+.list-unstyled li:not(.init):hover
+{
+    background-color:rgb(157, 157, 161);
+} 
+.list-unstyled li.selected:not(.init):after
+{
+    font-family: 'FontAwesome';
+    content:"\f00c";
+    padding-left:20px;
+    font-size:20px;
+}
+.list-unstyled li.init:after
+{
+    cursor: pointer;
+    border:0px;
+    font-family: 'FontAwesome';
+    content:"\f0d7";
+    font-size:25px;
+    padding-left:5px;
+}
     /*end!!!*/
 
     /* Css cho bottom xem thêm sản phẩm*/
@@ -207,7 +258,36 @@ html
         padding-left:5px;
     }
     /*end!!!*/
+    @media screen and (max-width: 768px){
+        #Div-BoChon
+        {
+            position: absolute;
+            width:100%;
+            height:70vw;
+            background-color: white;
+            top:0;
+            z-index:2;
+            display: none;
+            border:1px solid rgb(192, 189, 189);
 
+        }
+        #buton-Xemthem
+    {
+        margin:20px;
+    }
+
+    /* css cho button show filter*/
+    #show
+    {
+        width:50%;
+        height:auto;
+        padding-top:5px;
+        padding-bottom:5px;
+        cursor: pointer;
+        font-weight: 700;
+        border:none;
+    }
+    }
 
     /* Css cho các bộ chọn trong filer */
     #BoChon-Row1
@@ -365,25 +445,100 @@ html
     }
     
     /*end*/
-    /* css Cho sản phẩm */
-    .FvIcon
+    @media screen and  (max-width: 768px){
+        /* Css cho các bộ chọn trong filer */
+        .div-FaceSize
+        {
+                border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
+                width:6vw;
+                height:6vw;
+                border:1px solid  rgb(192, 189, 189);
+                display: inline-block;
+                padding-top:7px;
+        }
+        .div-img-color
+        {
+                border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
+                width:6vw;
+                height:6vw;
+                border:1px solid rgb(192, 189, 189);
+                display: inline-block;
+                padding:2px;
+        }
+        .div-img-day
+        {
+                border-radius:50%;
+                -moz-border-radius:50%;
+                -webkit-border-radius:50%;
+                width:7vw;
+                height:7vw;
+                border:1px solid  rgb(192, 189, 189);
+                display: inline-block;
+        }
+        .img-color
+        {
+            border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
+                width:5vw;
+                height:5vw;
+        }
+        .img-day
+        {
+            border-radius:50%;
+            -moz-border-radius:50%;
+            -webkit-border-radius:50%;
+            width:7vw;
+            height:7vw;
+        }
+        .clock-Colection
+        {
+            width:8vw;
+            height:10vw;
+        }
+    /* end!!*/
+    /* css cho thông báo khi chọn các bộ chọn trong fliter*/
+    #Strap
     {
-        border-radius:50%;
-        -moz-border-radius:50%;
-        -webkit-border-radius:50%;
-        width:30px;
-        height:30px;
-        position:absolute;
-        right:20px ;
-        top: 20px;
-        display:none;
-        border:1px solid  rgb(192, 189, 189);
-        padding-top:5px;
-        color: rgb(136, 128, 128);
-        background-color: white;
-        cursor: pointer;
-
+        background-color:black;
+        color:white;
+        width:80px;
+        height: 40px;
+        margin:15px;
+        padding:5px;
+        display: none;
     }
+
+    #Colors
+    {
+        background-color:black;
+        color:white;
+        width:80px;
+        margin:15px;
+        padding:5px;
+        display: none;
+    }
+    #Case-size
+    {
+        background-color:black;
+        color:white;
+        width:60px;
+        margin:15px;
+        padding:5px;
+        display: none;
+    }
+    .close
+    {
+        margin-left:20px;
+    }
+    
+    
+    }
+    /* css Cho sản phẩm */
     .Show-FvIcon
         {
             background-color: red;
@@ -416,33 +571,61 @@ html
         width:100%;
         height:430px;
     }
-    .Discount
-    {
-        width:60px;
-        height:35px;
-        position:absolute;
-        border-radius: 4px;
-        background-color:rgb(156, 4, 4);
-        color:white;
-        font-weight: 700;
-        left:20px;top: 20px;
-        line-height: 35px;
-    }       
-    .Button-Buy{
-        margin-top:10px;
-        width:150px;
-        height:30px;
-        display:none;
-    }
+    @media screen and (min-width:670px) and  (max-width: 768px){
+        .Sale-Product{
+            position:relative;
+            height:410px;
+            width:100%;
+        }
+        .Normal-Product{
+            position:relative;
+            width:100%;
+            height:410px;
 
-    .Product-Hover
-    {
-        box-shadow: -10px 0 10px -10px #333, 10px 0 10px -10px #333;
+        }
+    
     }
-    .Button-Buy-Responsive{
-        background-color:black;
-        color:white;
+    @media screen and  (max-width: 670px){
+        .Sale-Product{
+            position:relative;
+            height:360px;
+            width:100%;
+        }
+        .Normal-Product{
+            position:relative;
+            width:100%;
+            height:360px;
+
+        }
+    
     }
+    @media screen and (max-width: 567px){
+        .Sale-Product{
+            position:relative;
+            height:300px;
+            width:100%;
+        }
+        .Normal-Product{
+            position:relative;
+            width:100%;
+            height:280px;
+
+        }
+    }
+    @media screen and (max-width: 400px){
+        .Sale-Product{
+            position:relative;
+            height:230px;
+            width:100%;
+        }
+        .Normal-Product{
+            position:relative;
+            width:100%;
+            height:230px;
+
+        }
+    }
+   
     a
     {
         text-decoration: none;
